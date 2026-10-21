@@ -26,14 +26,22 @@
   text-decoration: none;
 }
 
+.header__link,
+.address a,
+.footer__menu-link,
+.lots__look-more-link {
+  text-underline-offset: 4px;
+}
+
 .header__logo {
   display: block;
   width: 148px;
-  height: 114px;
+  height: 105px;
 }
 
 .header__logo-image {
   display: block;
+  height: 105px;
 }
 
 .address {
@@ -46,6 +54,7 @@
 }
 
 .header__address {
+  width: 240px;
   justify-self: end;
 }
 
@@ -76,6 +85,9 @@
 }
 
 .cover__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   font-size: 100px;
   font-weight: 700;
   line-height: 1.15;
@@ -85,7 +97,6 @@
 
 .aligned-text {
   display: block;
-  line-height: 1.35em;
 }
 
 .aligned-text_left {
@@ -100,19 +111,22 @@
   text-align: right;
 }
 
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
 .cover__description {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding-left: 28px;
   font-size: 22px;
   text-transform: uppercase;
 }
 
 .cover__description-text {
   line-height: 1.27;
-  word-spacing: 0.8em;
+  word-spacing: 18px;
 }
 
 .bet-button {
@@ -214,7 +228,7 @@
   display: grid;
   grid-template-columns: 334px 1fr;
   gap: 25px;
-  margin: 181px 24px 0;
+  margin: 154px 24px 0;
 }
 
 .about__logo {
